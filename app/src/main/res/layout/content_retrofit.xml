@@ -7,13 +7,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="top.wuhaojie.rxdemo.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:context="top.wuhaojie.rxdemo.RetrofitActivity"
+    tools:showIn="@layout/activity_retrofit">
+
 
     <Button
-        android:id="@+id/btn_retrofit"
+        android:id="@+id/btn_visit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rxtrofit网络框架"
-        android:textAllCaps="false"/>
+        android:text="访问网络"/>
+
 </LinearLayout>
