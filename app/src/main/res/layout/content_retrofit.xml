@@ -7,9 +7,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="top.wuhaojie.rxdemo.RetrofitActivity"
+    tools:context=".retrofit.RetrofitActivity"
     tools:showIn="@layout/activity_retrofit">
 
+
+    <TextView
+        android:id="@+id/tv_response"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/btn_visit"

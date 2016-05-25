@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="top.wuhaojie.rxdemo">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RetrofitActivity"
+            android:name=".retrofit.RetrofitActivity"
             android:label="@string/title_activity_retrofit"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
