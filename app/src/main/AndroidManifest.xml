@@ -33,6 +33,8 @@
             android:label="@string/title_activity_scroll"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity android:name=".view.PaletteActivity">
+        </activity>
     </application>
 
 </manifest>

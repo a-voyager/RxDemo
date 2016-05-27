@@ -37,4 +37,11 @@
         android:layout_height="wrap_content"
         android:text="折叠Toolbar"
         android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_palette"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取界面主题色"
+        android:textAllCaps="false"/>
 </LinearLayout>

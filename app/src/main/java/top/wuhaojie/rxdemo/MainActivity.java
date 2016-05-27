@@ -18,6 +18,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import top.wuhaojie.rxdemo.retrofit.RetrofitActivity;
+import top.wuhaojie.rxdemo.view.PaletteActivity;
 import top.wuhaojie.rxdemo.view.ScrollActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -78,6 +79,12 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.btn_to_toolbar)
     void toScrollAct() {
         Intent intent = new Intent(this, ScrollActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.btn_palette)
+    void toPaletteAct() {
+        Intent intent = new Intent(this, PaletteActivity.class);
         startActivity(intent);
     }
 
