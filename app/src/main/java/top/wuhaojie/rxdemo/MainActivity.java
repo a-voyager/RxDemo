@@ -18,6 +18,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import top.wuhaojie.rxdemo.retrofit.RetrofitActivity;
+import top.wuhaojie.rxdemo.view.ScrollActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -71,6 +72,13 @@ public class MainActivity extends AppCompatActivity {
                 .setDefaults(NotificationCompat.DEFAULT_ALL)
                 .build();
         manager.notify(2, notification);
+    }
+
+
+    @OnClick(R.id.btn_to_toolbar)
+    void toScrollAct() {
+        Intent intent = new Intent(this, ScrollActivity.class);
+        startActivity(intent);
     }
 
 

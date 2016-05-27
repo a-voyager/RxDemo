@@ -5,9 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.FLASHLIGHT"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
-
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-
 
     <application
         android:allowBackup="true"
@@ -28,6 +26,11 @@
         <activity
             android:name=".retrofit.RetrofitActivity"
             android:label="@string/title_activity_retrofit"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".view.ScrollActivity"
+            android:label="@string/title_activity_scroll"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>

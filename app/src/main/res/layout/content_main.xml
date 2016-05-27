@@ -30,4 +30,11 @@
         android:layout_height="wrap_content"
         android:text="发送横幅通知"
         android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_to_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="折叠Toolbar"
+        android:textAllCaps="false"/>
 </LinearLayout>
