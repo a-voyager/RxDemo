@@ -106,6 +106,12 @@ public class MainActivity extends AppCompatActivity {
         mMainPresenter.opt();
     }
 
+    @OnClick(R.id.btn_to_anim)
+    void toAnimAct(){
+        mMainPresenter.toAnimAct(this);
+    }
+
+
     public void showText(String text) {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
     }
