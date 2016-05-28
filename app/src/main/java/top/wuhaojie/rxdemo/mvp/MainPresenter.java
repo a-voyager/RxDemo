@@ -2,6 +2,7 @@ package top.wuhaojie.rxdemo.mvp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 
 import top.wuhaojie.rxdemo.MainActivity;
 import top.wuhaojie.rxdemo.view.AnimActivity;
@@ -23,5 +24,10 @@ public class MainPresenter {
     public void toAnimAct(Context context) {
         Intent intent = new Intent(context, AnimActivity.class);
         context.startActivity(intent);
+    }
+
+    public void regBattery() {
+        IntentFilter ifilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
+        Intent batteryStatus = mActivity.registerReceiver(null, ifilter);
     }
 }

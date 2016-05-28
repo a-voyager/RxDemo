@@ -112,6 +112,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    @OnClick(R.id.btn_reg_battery)
+    void regBattery(){
+        mMainPresenter.regBattery();
+    }
+
     public void showText(String text) {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
     }
