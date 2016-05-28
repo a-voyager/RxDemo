@@ -50,6 +50,16 @@
             android:layout_gravity="center_horizontal|bottom"
             android:layout_weight="1"
             android:text="动画折叠"/>
+
+        <Button
+            android:id="@+id/btn_change_size"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_weight="1"
+            android:text="改变大小"/>
+
+
     </LinearLayout>
 
 </FrameLayout>
