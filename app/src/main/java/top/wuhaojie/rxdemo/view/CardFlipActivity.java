@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import javax.inject.Inject;
 
@@ -20,6 +19,8 @@ import top.wuhaojie.rxdemo.mvp.DaggerCardFlipComponent;
 
 public class CardFlipActivity extends AppCompatActivity implements BaseView {
 
+
+    private boolean mBackIsShow;
 
     @OnClick(R.id.btn_card_flip)
     void onClickChangeCard() {
@@ -50,7 +51,19 @@ public class CardFlipActivity extends AppCompatActivity implements BaseView {
     }
 
     public void changeCardView() {
-        Toast.makeText(this, "切换卡片", Toast.LENGTH_SHORT).show();
+        if (mBackIsShow) {
+            getFragmentManager().popBackStack();
+        }
+
+        mBackIsShow = true;
+
+        // 设置动画要在变换之前设置
+
+        getFragmentManager().beginTransaction().setCustomAnimations(
+                R.animator.card_flip_right_in, R.animator.card_flip_right_out,
+                R.animator.card_flip_left_in, R.animator.card_flip_left_out).replace(R.id.fl_container, new CardBFragment()).addToBackStack(null).commit();
+
+
     }
 
     public static class CardAFragment extends Fragment {
