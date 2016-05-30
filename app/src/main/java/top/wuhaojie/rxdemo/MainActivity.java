@@ -117,6 +117,11 @@ public class MainActivity extends AppCompatActivity {
         mMainPresenter.regBattery();
     }
 
+    @OnClick(R.id.btn_card_flip)
+    void toflipCard(){
+        mMainPresenter.toflipCardAnimAct();
+    }
+
     public void showText(String text) {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
     }

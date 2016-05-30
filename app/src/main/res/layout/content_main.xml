@@ -65,4 +65,11 @@
         android:layout_height="wrap_content"
         android:text="注册监控电量变化"
         android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_card_flip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="翻转卡片"
+        android:textAllCaps="false"/>
 </LinearLayout>

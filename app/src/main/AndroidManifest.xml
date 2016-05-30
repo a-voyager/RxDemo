@@ -47,6 +47,9 @@
                 <action android:name="android.intent.action.ACTION_POWER_DIS_CONNECTED"/>
             </intent-filter>
         </receiver>
+
+        <activity android:name=".view.CardFlipActivity">
+        </activity>
     </application>
 
 </manifest>
