@@ -20,6 +20,12 @@
         android:id="@+id/btn_visit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="访问网络"/>
+        android:text="原生访问网络"/>
+
+    <Button
+        android:id="@+id/btn_visit_use_rx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用RxJava反馈访问网络"/>
 
 </LinearLayout>
