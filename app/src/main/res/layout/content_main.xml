@@ -72,4 +72,11 @@
         android:layout_height="wrap_content"
         android:text="翻转卡片"
         android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_load_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fresco加载图片"
+        android:textAllCaps="false"/>
 </LinearLayout>

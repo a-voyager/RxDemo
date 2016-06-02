@@ -26,6 +26,7 @@ import top.wuhaojie.rxdemo.mvp.DaggerMainComponent;
 import top.wuhaojie.rxdemo.mvp.MainModel;
 import top.wuhaojie.rxdemo.mvp.MainPresenter;
 import top.wuhaojie.rxdemo.retrofit.RetrofitActivity;
+import top.wuhaojie.rxdemo.view.ImageActivity;
 import top.wuhaojie.rxdemo.view.PaletteActivity;
 import top.wuhaojie.rxdemo.view.ScrollActivity;
 
@@ -107,18 +108,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @OnClick(R.id.btn_to_anim)
-    void toAnimAct(){
+    void toAnimAct() {
         mMainPresenter.toAnimAct(this);
     }
 
 
     @OnClick(R.id.btn_reg_battery)
-    void regBattery(){
+    void regBattery() {
         mMainPresenter.regBattery();
     }
 
     @OnClick(R.id.btn_card_flip)
-    void toflipCard(){
+    void toflipCard() {
         mMainPresenter.toflipCardAnimAct();
     }
 
@@ -126,6 +127,12 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
     }
 
+
+    @OnClick(R.id.btn_load_img)
+    void toImage() {
+        Intent intent = new Intent(this, ImageActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -137,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
 
         initDagger();
 
-        if(sp!=null)
+        if (sp != null)
             Log.d(this.getClass().getSimpleName(), "成功， SP不为空！");
 
     }

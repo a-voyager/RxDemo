@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="top.wuhaojie.rxdemo.view.ImageActivity">
+
+    <com.facebook.drawee.view.DraweeView
+        android:id="@+id/dv_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:failureImage="@drawable/img_err"
+        fresco:failureImageScaleType="centerInside"
+        fresco:placeholderImage="@drawable/img_load"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:pressedStateOverlayImage="@android:color/holo_red_dark"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_load_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载图片"/>
+
+</LinearLayout>
