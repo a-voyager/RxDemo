@@ -8,7 +8,7 @@
     android:orientation="vertical"
     tools:context="top.wuhaojie.rxdemo.view.ImageActivity">
 
-    <com.facebook.drawee.view.DraweeView
+    <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/dv_image"
         android:layout_width="match_parent"
         android:layout_height="200dp"
