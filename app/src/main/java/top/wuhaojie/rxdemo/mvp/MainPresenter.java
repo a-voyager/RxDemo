@@ -6,6 +6,7 @@ import android.content.IntentFilter;
 
 import top.wuhaojie.rxdemo.MainActivity;
 import top.wuhaojie.rxdemo.view.AnimActivity;
+import top.wuhaojie.rxdemo.view.BlurActivity;
 import top.wuhaojie.rxdemo.view.CardFlipActivity;
 
 /**
@@ -34,6 +35,11 @@ public class MainPresenter {
 
     public void toflipCardAnimAct() {
         Intent intent = new Intent(mActivity, CardFlipActivity.class);
+        mActivity.startActivity(intent);
+    }
+
+    public void toBlurAct() {
+        Intent intent = new Intent(mActivity, BlurActivity.class);
         mActivity.startActivity(intent);
     }
 }

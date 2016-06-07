@@ -10,6 +10,11 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+
+        // 启用支持高斯模糊效果
+        renderscriptTargetApi 15
+        renderscriptSupportModeEnabled true
+
     }
     buildTypes {
         release {
@@ -42,4 +47,5 @@ dependencies {
     compile 'io.reactivex:rxandroid:1.2.0'
     compile 'com.facebook.fresco:fresco:0.10.0'
     compile 'com.facebook.fresco:imagepipeline-okhttp:0.10.0'
+    compile 'com.eightbitlab:blurview:1.0'
 }

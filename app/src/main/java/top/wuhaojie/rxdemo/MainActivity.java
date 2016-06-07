@@ -123,6 +123,11 @@ public class MainActivity extends AppCompatActivity {
         mMainPresenter.toflipCardAnimAct();
     }
 
+    @OnClick(R.id.btn_to_blur)
+    void toBlurAct() {
+        mMainPresenter.toBlurAct();
+    }
+
     public void showText(String text) {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
     }
