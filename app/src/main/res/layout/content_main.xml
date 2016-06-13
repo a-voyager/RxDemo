@@ -14,83 +14,90 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btn_retrofit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rxtrofit网络框架"
-            android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/btn_notify"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="发送通知"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_retrofit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rxtrofit网络框架"
+                android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/btn_notify_window"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="发送横幅通知"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送通知"
+                android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/btn_to_toolbar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="折叠Toolbar"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_notify_window"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送横幅通知"
+                android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/btn_palette"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="获取界面主题色"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_to_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="折叠Toolbar"
+                android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/btn_dagger"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="依赖注入"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_palette"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获取界面主题色"
+                android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/btn_to_anim"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="揭露动画"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_dagger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="依赖注入"
+                android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/btn_reg_battery"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="注册监控电量变化"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_to_anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="揭露动画"
+                android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/btn_card_flip"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="翻转卡片"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_reg_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注册监控电量变化"
+                android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/btn_load_img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="fresco加载图片"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_card_flip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="翻转卡片"
+                android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/btn_to_blur"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="高斯模糊"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_load_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fresco加载图片"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_to_blur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高斯模糊"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
 
     </ScrollView>
 </LinearLayout>
