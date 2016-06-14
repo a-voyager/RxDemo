@@ -33,7 +33,9 @@ public class BlurActivity extends AppCompatActivity {
 
         initBlurView();
 
-        mRecyclerView.setAdapter(new ImageAdapter());
+        ImageAdapter imageAdapter = new ImageAdapter();
+
+        mRecyclerView.setAdapter(imageAdapter);
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
